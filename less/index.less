@@ -4,26 +4,26 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
+// html, body, div, span, applet, object, iframe,
+// h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+// a, abbr, acronym, address, big, cite, code,
+// del, dfn, em, img, ins, kbd, q, s, samp,
+// small, strike, strong, sub, sup, tt, var,
+// b, u, i, center,
+// dl, dt, dd, ol, ul, li,
+// fieldset, form, label, legend,
+// table, caption, tbody, tfoot, thead, tr, th, td,
+// article, aside, canvas, details, embed, 
+// figure, figcaption, footer, header, hgroup, 
+// menu, nav, output, ruby, section, summary,
+// time, mark, audio, video {
+// 	margin: 0;
+// 	padding: 0;
+// 	border: 0;
+// 	font-size: 100%;
+// 	font: inherit;
+// 	vertical-align: baseline;
+// }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -53,7 +53,85 @@ table {
     box-sizing: border-box;
 }
 
+*, *:before, *:after {
+	box-sizing: inherit;
+  }
+
 html, body {
     height: 100%;
 }
+
+img{
+	margin-top: 5vh;
+}
+
+h2{
+	font-size:2rem;
+}
+
+//Header Stylings
+
+header{ 
+	nav {
+		display: flex;
+		justify-content: flex-end;
+		background-color: white;	
+	}//This closes the nav
+
+	a{
+		text-decoration: none;
+		color:gray;
+		padding: 0 2%;
+	}//This closes the a link
+
+}//This closes the header
+
+
+//Main-Content Stylings
+
+.top-content{
+	h1{
+		font-size:2.5rem;
+		color:cornflowerblue;
+		margin-bottom:2vh
+
+	}//This closes the H1
+	
+	p{
+		font-size:1.3rem;
+		margin-bottom:3vh;
+	}//This closes the paragraphs for top content	
+
+}//This closes .top-content
+
+.main-text{
+	display:flex;
+	flex-wrap: wrap;
+
+	.Hobbies ul{
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+		font-size:2rem;
+		border: 2px solid;
+		width:40%;
+		float:right;	
+	}//this closes the .Hobbies ul
+
+	.Hobbies h2{
+		display: flex;
+		justify-content: center;
+		border: 2px solid;
+		width: 50%;
+	}
+
+	p{
+		font-size:1.5rem;
+		display:flex;
+		flex-wrap: wrap;
+		border: 2px solid;
+		width: 45%;
+		float:left;
+	}//this closes the pargraph section for .main-text
+}//this closes .main-text 
 
